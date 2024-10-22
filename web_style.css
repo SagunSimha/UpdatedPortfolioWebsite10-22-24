@@ -1,0 +1,763 @@
+/* Overall */
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(21, 22, 22);
+    background-image: url("Profile\ Pic\ Png\ .png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: right;
+    width: auto;
+    margin: 0%;
+}
+
+
+
+h1 {
+    color: rgb(255, 255, 255);
+    margin: 0%;
+}
+
+
+
+/* Links */
+.special_link {
+    color: rgb(102, 147, 236);
+    text-decoration: none;
+}
+
+.special_link:hover {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* Navigation Bar */
+.navbar_top {
+    background-color: #0000008d;
+    backdrop-filter: blur(8px);
+    position: fixed;
+    width: 100%;
+}
+
+.navbar_bottom {
+    background-color: #0000008d;
+    backdrop-filter: blur(8px);
+}
+
+.navbarclass_1, .navbarclass_1>h1 {
+    height: auto;
+    display: flex;
+    flex: 1;
+    text-wrap: nowrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 1%;
+    color: rgb(135, 170, 182);
+}
+
+#typewriting_animation {
+    width: 29ch;
+    overflow: hidden;
+    border-right: 0.1em solid rgb(253, 253, 252);
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(50),
+        blink .75s step-end infinite alternate;
+}
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    25% {
+        border-color: rgb(237, 233, 224);
+    }
+}
+
+.navbarclass {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 30px;
+    height: 50px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+nav>div>a {
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    color: rgb(135, 170, 182);
+    font-size: 20px;
+    padding: 0.2rem 1rem;
+}
+
+nav>div>a:hover {
+    color: rgb(0, 0, 0);
+}
+
+nav>div>a::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: rgba(157, 132, 187, 0.286);
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.45s;
+}
+
+nav>div>a:hover::after {
+    scale: 1 1;
+}
+
+
+
+
+
+
+
+
+
+/* Main Body */
+.main_body {
+    color: aliceblue;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 38%;
+    padding-top: 100px;
+    word-spacing: 4px;
+    background-color: rgba(0, 0, 0, 0.656);
+}
+
+.hidden {
+    display: none;
+}
+
+#page1 {
+    height: 82vh;
+    width: auto;
+}
+
+#page2 {
+    width: auto;
+    justify-content: flex-start;
+}
+
+#page3 {
+    width: auto;
+    height: auto;
+    justify-content: flex-start;
+}
+
+#page4 {
+    height: auto;
+}
+.certification_image {
+    width: 200px;
+}
+
+#page5 {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    word-spacing: 4px;
+    background-color: rgba(0, 0, 0, 0.656);
+    height: auto;
+}
+
+
+
+
+
+
+
+/* SKILL */
+/* TECH SKILLS */
+.tech_skill_ul {
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    justify-content: space-between;
+    padding: 2%;
+    text-align: center;
+}
+
+.tech_skill_icon {
+    width: 70px;
+}
+
+/* Entrepreneurship */
+.entrepreneurship_ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 2%;
+    text-align: left;
+}
+
+/* Film Produciton */
+.film_industry_ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2%;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+/* contact me form */
+input,
+textarea {
+    background-color: rgba(57, 59, 63, 0.365);
+    border-style: solid;
+    border-color: #522258;
+}
+
+.contact_section {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(57, 59, 63, 0.365);
+    color: aliceblue;
+    height: 68vh;
+    gap: 10px;
+}
+
+.contact_section_Div1 {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.contact_section_Div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.contact_me_form {
+    color: rgb(157, 167, 174);
+}
+
+.contact_me_form thead,
+.contact_me_form tbody {
+    background-color: rgba(57, 59, 63, 0.365);
+    text-align: center;
+}
+
+.contact_me_form tfoot {
+    text-align: center;
+    background-color: rgba(57, 59, 63, 0.365);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Every table */
+.table {
+    padding: 2px;
+    border: 2px;
+    border-spacing: 3px;
+    border-color: aliceblue;
+    border-style: solid;
+    color: black;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+thead {
+    background-color: #522258;
+}
+
+tbody {
+    background-color: #8C3061;
+}
+
+tfoot {
+    background-color: #C63C51;
+}
+
+
+
+
+
+
+
+
+
+/*BUTTON*/
+.btn {
+    position: relative;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: rgba(157, 132, 187, 0.286);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn::after {
+    background-color: rgba(157, 132, 187, 0.286);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+
+
+/*MOBILE VIEW*/
+@media screen and (max-width: 430px) {
+    * {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: rgb(33, 95, 95);
+        background-image: url("Profile\ Pic\ Png\ .png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;
+        background-position: right;
+        width: 430px;
+        height: 932px;
+        margin: 0px 0px 0px 0px;
+        padding: 0%;
+    }
+
+    h1 {
+        color: rgb(255, 255, 255);
+    }
+
+
+
+
+    /* Links */
+    .special_link {
+        color: rgb(102, 147, 236);
+        text-decoration: none;
+    }
+
+    .special_link:hover {
+        color: blueviolet;
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+    /* Navigation Bar */
+    .navbar_top {
+        background-color: #00000000;
+        backdrop-filter: blur(50px);
+        position: fixed;
+        width: 100%;
+    }
+
+    .navbar_bottom {
+        background-color: #00000000;
+        backdrop-filter: blur(50px);
+        width: 100%;
+    }
+
+    .navbarclass {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        height: 50px;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    nav>div>a {
+        text-decoration: none;
+        position: relative;
+        cursor: pointer;
+        color: rgb(135, 170, 182);
+        font-size: 20px;
+        padding: 0.2rem 1rem;
+    }
+
+    nav>div>a:hover {
+        color: rgb(0, 0, 0);
+    }
+
+    nav>div>a::after {
+        position: absolute;
+        content: "";
+        inset: 0;
+        background: rgba(157, 132, 187, 0.286);
+        scale: 1 0;
+        z-index: -1;
+        transition: 0.45s;
+    }
+
+    nav>div>a:hover::after {
+        scale: 1 1;
+    }
+
+
+
+
+
+
+
+
+
+
+    /* Main Body */
+    .main_body {
+        color: aliceblue;
+        text-align: left;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 3%;
+        padding-right: 38%;
+        padding-top: 100px;
+        word-spacing: 4px;
+        background-color: rgba(0, 0, 0, 0.656);
+        transition: opacity 0.5s ease;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #page1 {
+        height: 82vh;
+        width: auto;
+    }
+
+    #page2 {
+        width: auto;
+        justify-content: flex-start;
+    }
+
+    #page3 {
+        width: auto;
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    #page4 {
+        width: auto;
+        height: auto;
+    }
+
+    #page5 {
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 3%;
+        word-spacing: 4px;
+        background-color: rgba(0, 0, 0, 0.656);
+        height: auto;
+    }
+
+
+
+
+
+
+
+    /* SKILL */
+    /* TECH SKILLS */
+    .tech_skill_ul {
+        display: flex;
+        flex-flow: row;
+        list-style: none;
+        justify-content: space-between;
+        padding: 2%;
+        text-align: center;
+    }
+
+    .tech_skill_icon {
+        width: 70px;
+    }
+
+    /* Entrepreneurship */
+    .entrepreneurship_ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 2%;
+        text-align: left;
+    }
+
+    /* Film Produciton */
+    .film_industry_ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 2%;
+        text-align: left;
+    }
+
+
+
+
+
+
+
+
+
+    /* contact me form */
+    input,
+    textarea {
+        background-color: rgba(57, 59, 63, 0.365);
+        border-style: solid;
+        border-color: #522258;
+    }
+
+    .contact_section {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(57, 59, 63, 0.365);
+        color: aliceblue;
+        height: 68vh;
+        gap: 10px;
+    }
+
+    .contact_section_Div1 {
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: aliceblue;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .contact_section_Div2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: aliceblue;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .contact_me_form {
+        color: rgb(157, 167, 174);
+    }
+
+    .contact_me_form thead,
+    .contact_me_form tbody {
+        background-color: rgba(57, 59, 63, 0.365);
+        text-align: center;
+    }
+
+    .contact_me_form tfoot {
+        text-align: center;
+        background-color: rgba(57, 59, 63, 0.365);
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* Every table */
+    .table {
+        padding: 2px;
+        border: 2px;
+        border-spacing: 3px;
+        border-color: aliceblue;
+        border-style: solid;
+        color: black;
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+    }
+
+    thead {
+        background-color: #522258;
+    }
+
+    tbody {
+        background-color: #8C3061;
+    }
+
+    tfoot {
+        background-color: #C63C51;
+    }
+
+
+
+
+
+
+
+
+
+    /*BUTTON*/
+    .btn {
+        position: relative;
+        font-size: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 6em;
+        transition: all 0.2s;
+        border: none;
+        font-family: inherit;
+        font-weight: 500;
+        color: black;
+        background-color: rgba(157, 132, 187, 0.286);
+    }
+
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+    }
+
+    .btn::after {
+        background-color: rgba(157, 132, 187, 0.286);
+    }
+
+    .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+
+    #navigation_links {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 430px) {
+    .navbarclass1 {
+        display: none;
+    }
+}
